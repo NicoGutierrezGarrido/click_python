@@ -15,9 +15,6 @@ clean-build:
 
 clean: clean-pyc clean-build
 
-build-dev: clean
-	docker build -f Dockerfile.dev -t $(PACKAGE_NAME) .
-
 build: clean
 	docker build -t $(PACKAGE_NAME) .
 
